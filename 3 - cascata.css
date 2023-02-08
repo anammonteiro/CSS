@@ -1,0 +1,12 @@
+/*
+    CSS
+    => Folha de Estilo em CASCATA
+*/
+
+h1 {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}

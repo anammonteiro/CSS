@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box; /*width e height são mantidos no tamanho original*/
+}
+
+.box {
+    width: 100px; 
+    height: 100px;
+    background: #AFAFAF;
+    padding: 20px;
+    border: 10px solid #AFFFFF;
+}

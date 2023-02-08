@@ -1,0 +1,171 @@
+/* VAMOS FALAR DE POSITION
+
+position static (padrão) - não aceita valores de bottom, right e left
+position fixed - fixa o elemento na tela e é como se flutuasse
+position sticky - age como um adesivo, fixa o elemento só onde eu determinar, é uma mistura dos 2 primeiros, começa fixo em um lugar e depois se move
+position relative - posição relativa à posição inicial dele
+position absolute - posição absoluta (fixa) a algum elemento ou à página, também flutua
+     - se não tiver pai/pai for static -> posiciona referente à página
+     - se o pai não for static -> posiciona referente ao pai
+
+propriedades:
+- top;
+- bottom,
+- right;
+- left;
+
+obs.: por padrão, o html sempre vai jogar os elementos para cima e para a esquerda!
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 200vh;
+    width: 200vw;
+}
+
+.div-dad {
+    height: 350px;
+    width: 350px;
+    background-color: purple;
+    position: fixed;
+    top: 50px;
+    left: 30px;
+}
+
+.div-son { 
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+}
+
+.div-uncle {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    position: static;
+} 
+
+/*
+.div-dad {
+    height: 350px;
+    width: 350px;
+    background-color: purple;
+    margin: 200px;
+    position: sticky;
+    top: 20px;
+    left: 20px;
+}
+
+.div-son { 
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+}
+
+.div-uncle {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+/*
+
+/*
+.div-dad {
+    height: 350px;
+    width: 350px;
+    background-color: purple;
+    margin: 200px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.div-son { 
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    position: relative;
+    top: 30px;
+}
+
+.div-uncle {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    position: relative;
+    top: 20px;
+    left:50px;
+}
+/*
+
+/*
+.div-dad {
+    height: 350px;
+    width: 350px;
+    background-color: purple;
+    margin: 200px;
+    position: absolute;
+    top: 50px;
+}
+
+.div-son { 
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+}
+
+.div-uncle {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+/*
+
+/*
+.div-dad {
+    height: 350px;
+    width: 350px;
+    background-color: purple;
+    margin: 200px;
+}
+
+.div-son { 
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    position: absolute;
+    top: 20px;
+}
+
+.div-uncle {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+/*
+
+/*
+.div-dad {
+    height: 350px;
+    width: 350px;
+    background-color: purple;
+    margin: 200px;
+    position: relative;
+}
+
+.div-son { 
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    position: absolute;
+    top: 20px;
+}
+
+.div-uncle {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+/*

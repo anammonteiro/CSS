@@ -1,0 +1,60 @@
+/*
+ABSOLUTAS
+1 polegada = 2,54cm
+    px (pixels) 1/100 polegadas 0,254mm
+    in (inches/polegadas)
+    cm / mm (centímetro / milímetro)
+
+RELATIVAS
+    % calcula o elemento relativo ao pai
+    vw (view width) 1vw é 1% da largura da janela do navegador
+    vh (view height) 1vh é 1% da altura da janela do navegador
+    em (emphemeral unit - unidade transitória) é uma unidade relativa ao elemento do pai
+    rem (root - raiz) é uma unidade relativa ao elemento 
+*/
+
+h1 {
+    font-size: 16px;
+}
+
+
+.pai {
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+
+.filho {
+    width: 50%;
+    height: 50%;
+    background: green;
+}
+
+
+.pai {
+    width: 50vw;
+    height: 50vh;
+    background: #0000FF;
+    color: #FFFFFF;
+}
+
+
+.vo {
+    font-size: 16px;
+}
+
+.pai {
+    width: 50vw;
+    height: 50vh;
+    background: #0000FF;
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+.filho {
+    width: 50%;
+    height: 50%;
+    background: green;
+    font-size: 2em;
+}
+  
